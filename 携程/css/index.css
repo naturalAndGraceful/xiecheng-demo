@@ -1,0 +1,647 @@
+.top {
+	width: 100%;
+	height: 36px;
+	background-color: #f4f4f4;
+	position: relative;
+}
+
+.top li>a:hover {
+	color: #0066CC;
+}
+
+.top .content {
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 36px;
+	color: #666;
+	display: flex;
+}
+
+a {
+	display: inline-block;
+	color: #333;
+	font-size: 12px;
+}
+
+.top .left,
+.top .right {
+	width: 600px;
+}
+
+.top .content .left .hov {
+	margin: 0 30px;
+}
+
+.top .left .i1,
+.top .left .i2,
+.top .right i:nth-of-type(1),
+.top .right .i2 {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background-image: url(../img/himg/ia_100000145.png);
+	margin-top: -2px;
+	margin-right: 2px;
+	background-position: -8px -8px;
+	vertical-align: middle;
+}
+
+.top .left .i2 {
+	background-position: -46px -54px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.top .right>a {
+	margin-right: 16px;
+}
+
+.top .right .blue {
+	color: #0066CC;
+}
+
+.top .right .block {
+	height: 16px;
+	padding-right: 10px;
+	display: inline-block;
+	line-height: 16px;
+	border-right: 1px #ccc solid;
+}
+
+.top .right i:nth-of-type(1) {
+	background-position: -8px -64px;
+}
+
+.top .content .right .i2 {
+	background-image: url(../img/himg/ia_100000145.png);
+	background-position: -46px -56px;
+}
+
+.top .content .right .i3 {
+	background-image: url(../img/himg/ia_100000145.png);
+	background-position: -99px -68px;
+}
+
+.top .content .right .i4 {
+	display: inline-block;
+	width: 20px;
+	background-image: url(../img/himg/ia_100000145.png);
+	background-position: -96px -101px;
+}
+
+.top .sec,
+.top .opp {
+	z-index: 1000;
+	position: absolute;
+	left: 106px;
+	width: 210px;
+	left: 20px;
+	display: none;
+	padding: 3px;
+	transition: 1s;
+	background-color: #fff;
+}
+
+.top ul li {
+	display: inline-block;
+	padding: 0 2px;
+	padding: 0 10.5px;
+}
+
+.top ul li:nth-of-type(1) i,
+.top ul li:nth-of-type(2) i,
+.top ul li:nth-of-type(3) i,
+.top ul li:nth-of-type(4) i,
+.top ul li:nth-of-type(5) i,
+.top ul li:nth-of-type(6) i,
+.top ul li:nth-of-type(7) i,
+.top ul li:nth-of-type(8) i {
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	background-image: url(../img/himg/ia_100000134.png);
+	vertical-align: middle;
+}
+
+.top ul li:nth-of-type(2) i {
+	background-position: 0 -26px;
+}
+
+.top ul li:nth-of-type(3) i {
+	background-position: 0 -102px;
+}
+
+.top ul li:nth-of-type(4) i {
+	background-position: 0 169px;
+}
+
+.top ul li:nth-of-type(5) i {
+	background-position: 0 145px;
+}
+
+.top ul li:nth-of-type(6) i {
+	background-position: 0 193px;
+}
+
+.top ul li:nth-of-type(7) i {
+	background-position: 0 218px;
+}
+
+.top ul li:nth-of-type(8) i {
+	background-position: 0 244px;
+}
+.top .left>a:hover,.top .right>a:hover{
+	color: blue;
+}
+.left .er {
+	display: inline-block;
+	position: relative;
+}
+
+.left .er:hover ul {
+	box-shadow: 0 0 2px #CCCCCC;
+	display: block;
+}
+
+.left .er:hover ul>li:hover {
+	background-color: #CCCCCC;
+}
+.right .xie{
+	position: relative;
+}
+.right .opp {
+	left: -8px;
+	top: 17px;
+	width: 90px;
+	padding-top: 5px;
+}
+.right .opp li{
+	color: #333;
+	width: 80px;
+	padding: 10px 5px 5px;
+}
+.right .xie:hover .opp {
+	display: block;
+	color: #0066CC;
+}
+.right .opp li:hover{
+	background-color: #eee;
+	color: #0066CC;
+}
+.right .yin{
+	padding-top: 10px;
+	position: absolute;
+	top: 33px;
+	text-align: center;
+	font-size: 14px;
+	width: 150px;
+	height: 200px;
+	background-color: #fff;
+	left: -116px;
+	margin-top: 3px;
+	display: none;
+}
+.right .yin span{
+	display: inline-block;
+	color: #333;
+}
+.right .yin p{
+	background-color: royalblue;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+.right .xie:hover .yin{
+	display: block;
+	box-shadow: 0 0 2px #CCCCCC;
+}
+.right .yin .none{
+	background-color: #fff;
+	color: #333;
+	font-weight: none;
+}
+.clear::after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+
+			.box2 {
+				width: 100%;
+			}
+			/* 蓝色导航栏 */
+			.box2 .daohang {
+				list-style: none;
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.box2 .daohang>li:hover {
+				background-color: rgb(10, 86, 187);
+			}
+
+			.box2 .daohang>li {
+				display: block;
+				text-align: center;
+				line-height: 40px;
+				width: 84px;
+				height: 40px;
+			}
+
+			.box2 .daohang li a {
+				font-size: 15px;
+				text-decoration: none;
+				color: white;
+			}
+
+			.box {
+				width: 100%;
+				height: 80px;
+			}
+
+			.box img {
+				width: 205px;
+				margin-top: 15px;
+			}
+
+			.box2 {
+				width: 100%;
+				height: 40px;
+				background-color: rgb(37, 119, 227);
+			}
+			/* 白色导航栏 */
+			.box2 .tishi1 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi1 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi1 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi1 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi1>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.jiantou1{
+				display: none;
+				width: 0;
+				height: 0;
+				border: 7px solid white;
+				border-color: white transparent transparent transparent;
+				position: relative;
+				left: 25px;
+				top: -14px;
+				transform: rotateZ(180deg);
+			}
+			.box2 .tishi2 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi2 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi2 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi2 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi2>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi3 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi3 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi3 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi3 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi3>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi4 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi4 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi4 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi4 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi4>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi5 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi5 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi5 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi5 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi5>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi6 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi6 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi6 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi6 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi6>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi7 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi7 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi7 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi7 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi7>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi8 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi8 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi8 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi8 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi8>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi9 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi9 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi9 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi9 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi9>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi10 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi10 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi10 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi10 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi10>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.box2 .tishi11 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+			
+			.box2 .tishi11 ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.box2 .tishi11 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			.box2 .tishi11 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+			
+			.box2 .save .tishi11>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+			.save {
+				position: relative;
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			.box3 {
+				width: 100%;
+				position: relative;
+				top: -38px;
+				z-index: -2;
+			}
+
+			.box3 img {
+				width: 100%;
+			}
+
+			.box4 {
+				position: absolute;
+				top: 180px;
+				left: 85px;
+			}
+

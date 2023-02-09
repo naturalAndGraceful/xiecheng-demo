@@ -1,0 +1,25 @@
+a {
+	text-decoration: none;
+}
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul,
+ol {
+	list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}

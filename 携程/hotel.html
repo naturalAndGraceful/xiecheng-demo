@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./swiper/package/swiper-bundle.css">
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="./swiper/package/swiper-bundle.js">
+
+		</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			.top {
+				width: 100%;
+				height: 36px;
+				background-color: #f4f4f4;
+				position: relative;
+			}
+			
+			.top li>a:hover {
+				color: #0066CC;
+			}
+			
+			.top .content {
+				width: 1200px;
+				margin: 0 auto;
+				line-height: 36px;
+				color: #666;
+				display: flex;
+			}
+			
+			.top a,
+			.lav a,
+			.contop a {
+				display: inline-block;
+				color: #333;
+				font-size: 12px;
+			}
+			
+			.top .left,
+			.top .right {
+				width: 600px;
+			}
+			
+			.top .content .left .hov {
+				margin: 0 30px;
+			}
+			
+			.top .left .i1,
+			.top .left .i2,
+			.top .right i:nth-of-type(1),
+			.top .right .i2 {
+				display: inline-block;
+				height: 16px;
+				width: 16px;
+				background-image: url(../img/himg/ia_100000145.png);
+				margin-top: -2px;
+				margin-right: 2px;
+				background-position: -8px -8px;
+				vertical-align: middle;
+			}
+			
+			.top .left .i2 {
+				background-position: -46px -54px;
+				vertical-align: middle;
+				overflow: hidden;
+			}
+			
+			.top .right>a {
+				margin-right: 16px;
+			}
+			
+			.top .right .blue {
+				color: #0066CC;
+			}
+			
+			.top .right .xie span {
+				display: inline-block;
+				height: 36px;
+			}
+			
+			.top .right .block {
+				height: 16px;
+				padding-right: 10px;
+				display: inline-block;
+				line-height: 16px;
+				border-right: 1px #ccc solid;
+			}
+			
+			.top .right i:nth-of-type(1) {
+				background-position: -8px -64px;
+			}
+			
+			.top .content .right .i2 {
+				background-image: url(../img/himg/ia_100000145.png);
+				background-position: -46px -56px;
+			}
+			
+			.top .content .right .i3 {
+				background-image: url(../img/himg/ia_100000145.png);
+				background-position: -99px -68px;
+			}
+			
+			.top .content .right .i4 {
+				display: inline-block;
+				width: 20px;
+				background-image: url(../img/himg/ia_100000145.png);
+				background-position: -96px -101px;
+			}
+			
+			.top .sec,
+			.top .opp {
+				position: absolute;
+				left: 105px;
+				width: 208px;
+				left: 20px;
+				display: none;
+				000000000000000000000000 z-index: 3;
+				padding: 3px;
+				transition: 1s;
+				background-color: #fff;
+				box-shadow: 0 0 2px #888;
+				margin-left: -12px;
+			}
+			
+			.top ul li {
+				display: inline-block;
+				padding: 0 2px;
+				padding: 0 10.5px;
+				width: 80px;
+			}
+			
+			.top ul li:nth-of-type(1) i,
+			.top ul li:nth-of-type(2) i,
+			.top ul li:nth-of-type(3) i,
+			.top ul li:nth-of-type(4) i,
+			.top ul li:nth-of-type(5) i,
+			.top ul li:nth-of-type(6) i,
+			.top ul li:nth-of-type(7) i,
+			.top ul li:nth-of-type(8) i {
+				display: inline-block;
+				width: 25px;
+				height: 18px;
+				background-image: url(../img/himg/ia_100000134.png);
+				vertical-align: middle;
+			}
+			
+			.top ul li:nth-of-type(2) i {
+				background-position: 0 -26px;
+			}
+			
+			.top ul li:nth-of-type(3) i {
+				background-position: 0 -102px;
+			}
+			
+			.top ul li:nth-of-type(4) i {
+				background-position: 0 169px;
+			}
+			
+			.top ul li:nth-of-type(5) i {
+				background-position: 0 145px;
+			}
+			
+			.top ul li:nth-of-type(6) i {
+				background-position: 0 193px;
+			}
+			
+			.top ul li:nth-of-type(7) i {
+				background-position: 0 218px;
+			}
+			
+			.top ul li:nth-of-type(8) i {
+				background-position: 0 244px;
+			}
+			
+			.top .left>a:hover,
+			.top .right>a:hover {
+				color: blue;
+			}
+			
+			.top .left .er {
+				display: inline-block;
+				position: relative;
+			}
+			
+			.top .left .er:hover ul {
+				z-index: 3;
+				box-shadow: 0 0 2px #CCCCCC;
+				display: block;
+			}
+			
+			.top .left .er:hover ul>li:hover {
+				background-color: #CCCCCC;
+			}
+			
+			.top .right .xie {
+				position: relative;
+			}
+			
+			.top .right .opp {
+				left: -8px;
+				top: 25px;
+				width: 90px;
+				padding-top: 5px;
+			}
+			
+			.top .right .opp li {
+				color: #333;
+				width: 80px;
+				padding: 10px 5px 5px;
+			}
+			
+			.top .right .xie:hover .opp {
+				display: block;
+				color: #0066CC;
+			}
+			
+			.top .right .opp li:hover {
+				background-color: #eee;
+				color: #0066CC;
+			}
+			
+			.top .right .yin {
+				padding-top: 10px;
+				position: absolute;
+				top: 33px;
+				text-align: center;
+				font-size: 14px;
+				width: 150px;
+				height: 200px;
+				background-color: #fff;
+				left: -116px;
+				margin-top: 3px;
+				display: none;
+			}
+			
+			.top .right .yin span {
+				display: inline-block;
+				color: #333;
+			}
+			
+			.top .right .yin p {
+				background-color: royalblue;
+				color: #FFFFFF;
+				font-weight: bolder;
+			}
+			
+			.top .right .xie:hover .yin {
+				display: block;
+				box-shadow: 0 0 2px #CCCCCC;
+				z-index: 3;
+			}
+			
+			.top .right .yin .none {
+				background-color: #fff;
+				color: #333;
+				font-weight: none;
+			}
+			
+			/* lav区域开始 */
+			.lav {
+				width: 1200px;
+				height: 80px;
+				margin: 0 auto;
+				display: flex;
+				position: relative;
+			}
+			
+			.lav .img {
+				margin: 5px 0;
+			}
+			
+			.lav .img>img {
+				margin: 20px 0;
+				height: 36px;
+			}
+			
+			.lav .inp {
+				margin-left: 50px;
+				position: relative;
+			}
+			
+			.lav .inp i {
+				color: #fff;
+			}
+			
+			.lav .inp input[type=text] {
+				width: 340px;
+				height: 24px;
+				margin: 28px;
+				border-radius: 3px;
+				border: lightblue 1px solid;
+				outline: none;
+				text-indent: .5em;
+			}
+			
+			.lav .inp .bck {
+				padding-top: 3px;
+				width: 36px;
+				height: 25px;
+				background-color: lightblue;
+				text-align: center;
+				position: absolute;
+				left: 365px;
+				top: 28px;
+				border-radius: 5px;
+			}
+			
+			.lav .right {
+				position: absolute;
+				right: 10px;
+				text-align: right;
+				margin-top: 26px;
+				font-size: 12px;
+				height: 30px;
+				overflow: hidden;
+				padding: 5px;
+				background-color: #fff;
+			}
+			
+			.lav .right:hover {
+				overflow: visible;
+				box-shadow: 0 0 2px #888;
+				height: 80px;
+			}
+			#base_ft{
+				text-align: center;
+				background-color: #fff;
+				margin-top: 20px;
+				padding: 10px;
+			}
+			#base_ft a{
+				color: #999999;
+				font-size: 14px;
+			}
+			.honour_wrap{
+				margin-top: 10px;
+			}
+			#base_ft a:hover{
+				text-decoration: underline;
+			}
+			.clear::after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+
+			.box2 {
+				width: 100%;
+			}
+
+			/* 蓝色导航栏 */
+			.box2 .daohang {
+				list-style: none;
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.box2 .daohang>li:hover {
+				background-color: rgb(10, 86, 187);
+			}
+
+			.box2 .daohang>li {
+				display: block;
+				text-align: center;
+				line-height: 40px;
+				width: 84px;
+				height: 40px;
+			}
+
+			.box2 .daohang li a {
+				font-size: 15px;
+				text-decoration: none;
+				color: white;
+			}
+
+			.box {
+				width: 100%;
+				height: 80px;
+			}
+
+			.box img {
+				width: 205px;
+				margin-top: 15px;
+			}
+
+			.box2 {
+				width: 100%;
+				height: 40px;
+				background-color: rgb(37, 119, 227);
+			}
+
+			/* 白色导航栏 */
+			.box2 .tishi1 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi1 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi1 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi1 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi1>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.jiantou1 {
+				display: none;
+				width: 0;
+				height: 0;
+				border: 7px solid white;
+				border-color: white transparent transparent transparent;
+				position: relative;
+				left: 25px;
+				top: -14px;
+				transform: rotateZ(180deg);
+			}
+
+			.box2 .tishi2 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi2 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi2 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi2 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi2>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi3 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi3 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi3 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi3 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi3>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi4 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi4 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi4 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi4 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi4>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi5 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi5 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi5 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi5 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi5>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi6 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi6 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi6 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi6 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi6>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi7 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi7 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi7 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi7 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi7>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi8 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi8 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi8 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi8 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi8>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi9 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi9 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi9 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi9 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi9>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi10 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi10 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi10 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi10 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi10>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.box2 .tishi11 {
+				display: none;
+				width: 1200px;
+				height: 37px;
+				background-color: white;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				margin: 0 auto;
+			}
+
+			.box2 .tishi11 ul {
+				list-style: none;
+				float: left;
+			}
+
+			.box2 .tishi11 ul li {
+				margin-left: 25px;
+				float: left;
+				line-height: 37px;
+			}
+
+			.box2 .tishi11 ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				color: black;
+			}
+
+			.box2 .save .tishi11>ul li a:hover {
+				color: rgb(37, 119, 267);
+			}
+
+			.save {
+				position: relative;
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			.box3 {
+				width: 100%;
+				position: relative;
+				top: -38px;
+				z-index: -2;
+			}
+
+			.box3 img {
+				width: 100%;
+			}
+
+			.box4 {
+				position: absolute;
+				top: 180px;
+				left: 85px;
+			}
+
+			.box5 {
+				width: 100%;
+			}
+
+			.save2 {
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			.box6 {
+				width: 1160px;
+				height: 177px;
+				background-color: white;
+				position: absolute;
+				top: 240px;
+				box-shadow: 0 10px 15px gray;
+			}
+
+			.box7 {
+				width: 270px;
+				height: 75px;
+				border: 1px solid rgb(218, 223, 230);
+				position: relative;
+				left: 25px;
+				top: 25px;
+				border-bottom: #0000FF 2px solid;
+			}
+
+			.box7 p {
+				font-size: 15px;
+				color: rgb(133, 146, 166);
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+
+			.box7 h4 {
+				margin-top: 5px;
+				margin-left: 20px;
+			}
+
+			.tanchu1 {
+				border: 1px gray solid;
+				display: none;
+				width: 537px;
+				height: 482px;
+				background-color: white;
+				position: absolute;
+				top: 103px;
+				left: 25px;
+				z-index: 9;
+			}
+
+			.tanchu1 div {
+				width: 100%;
+				height: 40px;
+			}
+
+			.tanchu1 .jilu a {
+				font-size: 15px;
+				text-decoration: none;
+				color: black;
+				line-height: 40px;
+				margin-left: 10px;
+			}
+
+			.tanchu1 .jilu:hover.jilu {
+				background-color: rgb(38, 129, 255);
+			}
+
+			.tanchu1 .jilu:hover a {
+				color: white;
+			}
+
+			.tanchu1 p {
+				line-height: 35px;
+				margin-left: 10px;
+				width: 525px;
+				height: 35px;
+				background-color: rgb(247, 247, 251);
+			}
+
+			.tanchu1 td {
+				width: 105px;
+				height: 33px;
+			}
+
+			.tanchu1 tr td:hover {
+				background-color: rgb(38, 129, 255);
+			}
+
+			.tanchu1 tr td:hover a {
+				color: white;
+			}
+
+			.tanchu1 td a {
+				text-decoration: none;
+				color: #000000;
+				font-size: 15px;
+				margin-left: 10px;
+			}
+
+			.box8 {
+				width: 344px;
+				height: 75px;
+				border: 1px solid rgb(218, 223, 230);
+				position: relative;
+				left: 296px;
+				top: -52px;
+			}
+
+			.box8 .left {
+				position: relative;
+				top: 15px;
+				width: 144px;
+				height: 58px;
+				border-bottom: #0000FF 2px solid;
+			}
+
+			.box8 .left p {
+				margin-left: 20px;
+				font-size: 15px;
+				color: rgb(133, 146, 166);
+			}
+
+			.box8 .left h4 {
+				margin-left: 20px;
+				margin-top: 5px;
+			}
+
+			.box8 .mid {
+				position: relative;
+				left: 154px;
+				top: -33px;
+			}
+
+			.box8 .right {
+				position: relative;
+				left: 200px;
+				top: -65px;
+				width: 144px;
+				height: 58px;
+				border-bottom: #0000FF 2px solid;
+			}
+
+			.box8 .right p {
+				margin-left: 70px;
+				font-size: 15px;
+				color: rgb(133, 146, 166);
+			}
+
+			.box8 .right h4 {
+				margin-left: 30px;
+				margin-top: 5px;
+			}
+
+			.tanchu2 {
+				display: none;
+				border: 1px gray solid;
+				width: 570px;
+				height: 354px;
+				background-color: white;
+				position: absolute;
+				top: 75px;
+				z-index: 9;
+			}
+
+			.tanchu2 .zuo {
+				width: 252px;
+				height: 290px;
+			}
+
+			.tanchu2 .zuo p {
+				margin-top: 20px;
+				text-align: center;
+				font-size: 18px;
+			}
+
+			.tanchu2 .zuo span {
+				font-size: 10px;
+				margin-left: 10px;
+			}
+
+			.tanchu2 .zuo tr td {
+				width: 30px;
+				height: 30px;
+				text-align: center;
+			}
+
+			.tanchu2 .zuo tr td:hover {
+				background-color: rgb(38, 129, 255);
+			}
+
+			.tanchu2 .zuo tr td a {
+				color: #000000;
+				text-decoration: none;
+				font-size: 15px;
+				line-height: 30px;
+			}
+
+			.tanchu2 .you {
+				position: relative;
+				left: 318px;
+				top: -310px;
+			}
+
+			.tanchu2 .xia {
+				width: 100%;
+				height: 65px;
+				border: 1px solid gray;
+				position: relative;
+				top: -333px;
+				text-align: center;
+			}
+
+			.tanchu2 .xia p {
+				font-size: 10px;
+				color: gray;
+				margin-top: 20px;
+			}
+
+			.box9 {
+				width: 175px;
+				height: 75px;
+				border: 1px solid rgb(218, 223, 230);
+				position: relative;
+				left: 641px;
+				top: -129px;
+				border-bottom: #0000FF 2px solid;
+			}
+
+			.box9 p {
+				font-size: 15px;
+				color: rgb(133, 146, 166);
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+
+			.box9 h4 {
+				margin-top: 5px;
+				margin-left: 20px;
+			}
+
+			.tanchu3 {
+				display: none;
+				width: 300px;
+				height: 195px;
+				background-color: white;
+				position: absolute;
+				top: 104px;
+				left: 641px;
+				z-index: 9;
+				border: 1px solid gray;
+			}
+
+			.tanchu3 .room {
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-right: 40px;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.tanchu3 .sure {
+				margin-right: 35px;
+				margin-top: 40px;
+				float: right;
+			}
+
+			.tanchu3 .sure a {
+				text-decoration: none;
+				color: rgb(38, 129, 255);
+			}
+
+			.box10 {
+				width: 247px;
+				height: 75px;
+				border: 1px solid rgb(218, 223, 230);
+				position: relative;
+				left: 818px;
+				top: -207px;
+				border-bottom: #0000FF 2px solid;
+			}
+
+			.box10 p {
+				font-size: 15px;
+				color: rgb(133, 146, 166);
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+
+			.box10 input {
+				border: none;
+				outline: none;
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+
+			.box11 {
+				display: block;
+				width: 76px;
+				height: 76px;
+				background-color: rgb(38, 129, 255);
+				position: relative;
+				top: -285px;
+				left: 1067px;
+			}
+
+			.box11:hover {
+				background-color: #0000FF;
+			}
+
+			.box12 {
+				display: flex;
+				position: relative;
+				top: -254px;
+				left: 25px;
+			}
+
+			.box12 .ada {
+				width: 100px;
+				height: 30px;
+				background-color: rgb(240, 242, 245);
+				margin-left: 20px;
+				text-align: center;
+			}
+
+			.box12 .ada a {
+				color: #000000;
+				line-height: 30px;
+				text-decoration: none;
+				font-size: 10px;
+			}
+
+			.box12 .ada a:hover {
+				color: rgb(38, 129, 255);
+			}
+
+			.box13 .banner {
+				overflow: hidden;
+				width: 100%;
+				margin-top: 150px;
+			}
+			.swiper-button-next{
+				position: absolute;
+				left: 1120px;
+			}
+			.logo h1{
+				margin-top: 50px;
+				text-align: center;
+			}
+			.logo .three{
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-around;
+			}
+			.logo .three2{
+				color: gray;
+				font-size: 15px;
+				display: flex;
+				justify-content: space-around;
+			}
+			.logo .three2 span{
+				margin-right: 80px;
+			}
+			.jiudian{
+				margin-top: 100px;
+			}
+			.jiudian h1{
+				text-align: center;
+			}
+			.jiudian .place{
+				margin: 0 auto;
+				width: 595px;
+				display: flex;
+				justify-content: space-around;
+			}
+			.jiudian .place span{
+				margin-top: 30px;
+				width: 60px;
+				height: 23px;
+				border: 1px solid gray;
+				text-align: center;
+				line-height: 23px;
+			}
+			.jiudian .place span a{
+				text-decoration: none;
+				font-size: 15px;
+				color: black;
+			}
+			.bgc{
+				background-color: rgb(38, 129, 255);
+			}
+			.tupian{
+				margin: 0 auto;
+				margin-top: 20px;
+				display: none;
+			}
+			.tanchu4{
+				display: none;
+				position: absolute;
+				left: 446px;
+				top: 1129px;
+				width: 520px;
+				height: 365px;
+				background-color: white;
+				border: 1px solid gray;
+			}
+			.tanchu4 td{
+				padding-top: 7px;
+				width: 96px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+			}
+			.tanchu4 td a{
+				color: #000000;
+				text-decoration: none;
+			}
+			.tanchu4 td:hover{
+				background-color: #007AFF;
+			}
+			.three3{
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.bottom{
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+					<div class="content">
+						<div class="left">
+							<a href="javascript:;">让旅行更幸福</a>
+							<div class="er">
+								<a href="javascript:;" class="hov">
+									<i class="i1"></i>
+									<span>Language</span>
+									<i class="i2"></i>
+								</a>
+								<ul class="sec">
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>简体中文</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>繁体中文</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>English</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>简体中文</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>简体中文</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>简体中文</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>简体中文</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i></i>
+											<span>简体中文</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="right">
+							<a href="javascript:;" class="blue">您好,请登录</a>
+							<a href="javascript:;" class="block">免费注册</a>
+							<a href="javascript:;" class="block">
+								<i></i>
+								<span>消息</span>
+							</a>
+							<a href="javascript:;" class="block">
+								<div class="xie">
+									<span>我的携程</span>
+									<i class="i2"></i>
+									<ul class="opp">
+										<li>我的收藏</li>
+										<li>我的优惠券</li>
+										<li>常用信息</li>
+										<li>我的钱包</li>
+									</ul>
+								</div>
+							</a>
+							<a href="javascript:;" class="block">
+								<div class="xie">
+									<span>我的订单</span>
+									<i class="i2"></i>
+									<ul class="opp">
+										<li>酒店订单</li>
+										<li>旅游订单</li>
+										<li>火车票订单</li>
+										<li>全部订单</li>
+									</ul>
+								</div>
+							</a>
+							<a href="javascript:;" class="block">
+								<span>客服中心</span>
+							</a>
+							<a href="javascript:;" class="blue">
+								<div class="xie">
+									<i class="i3"></i>
+									<div class="yin">
+										<img src="./img/himg/ia_100000104.jpg">
+										<span>手机快速扫码下载</span>
+										<p>携程旅行手机版</p>
+									</div>
+								</div>
+							</a>
+							<a href="javascript:;" class="blue">
+								<div class="xie">
+									<i class="i4"></i>
+									<div class="yin" id="yin">
+										<img src="./img/himg/ia_100000104.jpg">
+										<span class="span">扫一扫</span>
+										<p class="none">了解爆款旅行好货</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+		<div class="box">
+			<div class="save">
+				<img src="images/c-img/c_logo2020.png">
+			</div>
+		</div>
+		<div class="box2">
+			<div class="save">
+				<!-- 安全区 -->
+				<ul class="daohang">
+					<!-- 蓝色导航栏 -->
+					<li><a href="index.html">首页</a></li>
+					<li>
+						<a href="">酒店</a>
+						<div class="tishi1">
+							<!-- 白色导航栏 -->
+							<ul>
+								<li><a href="">国内酒店</a></li>
+								<li><a href="">海外酒店</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="">旅游</a>
+						<div class="tishi2">
+							<ul>
+								<li><a href="">旅游首页</a></li>
+								<li><a href="">周末游</a></li>
+								<li><a href="">跟团游</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">私家团</a></li>
+								<li><a href="">邮轮</a></li>
+								<li><a href="">门票.活动</a></li>
+								<li><a href="">主题游</a></li>
+								<li><a href="">定制游行</a></li>
+								<li><a href="">游学</a></li>
+								<li><a href="">签证</a></li>
+								<li><a href="">企业会讲</a></li>
+								<li><a href="">高端游</a></li>
+								<li><a href="">爱玩户外</a></li>
+								<li><a href="">保险</a></li>
+								<li><a href="">特卖汇</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="">跟团游</a>
+						<div class="tishi2">
+							<ul>
+								<li><a href="">旅游首页</a></li>
+								<li><a href="">周末游</a></li>
+								<li><a href="">跟团游</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">私家团</a></li>
+								<li><a href="">邮轮</a></li>
+								<li><a href="">门票.活动</a></li>
+								<li><a href="">主题游</a></li>
+								<li><a href="">定制游行</a></li>
+								<li><a href="">游学</a></li>
+								<li><a href="">签证</a></li>
+								<li><a href="">企业会讲</a></li>
+								<li><a href="">高端游</a></li>
+								<li><a href="">爱玩户外</a></li>
+								<li><a href="">保险</a></li>
+								<li><a href="">特卖汇</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="">自由行</a>
+						<div class="tishi2">
+							<ul>
+								<li><a href="">旅游首页</a></li>
+								<li><a href="">周末游</a></li>
+								<li><a href="">跟团游</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">私家团</a></li>
+								<li><a href="">邮轮</a></li>
+								<li><a href="">门票.活动</a></li>
+								<li><a href="">主题游</a></li>
+								<li><a href="">定制游行</a></li>
+								<li><a href="">游学</a></li>
+								<li><a href="">签证</a></li>
+								<li><a href="">企业会讲</a></li>
+								<li><a href="">高端游</a></li>
+								<li><a href="">爱玩户外</a></li>
+								<li><a href="">保险</a></li>
+								<li><a href="">特卖汇</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="">机票</a>
+						<div class="tishi3">
+							<ul>
+								<li><a href="">国内/国际·中国港澳台机票</a></li>
+								<li><a href="">特价机票</a></li>
+								<li><a href="">航班动态</a></li>
+								<li><a href="">值机选座</a></li>
+								<li><a href="">退票改签</a></li>
+								<li><a href="">机场攻略</a></li>
+								<li><a href="">定制包机</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="火车.html">火车</a>
+						<div class="tishi4">
+							<ul>
+								<li><a href="">国内火车票</a></li>
+								<li><a href="">国际/港台火车票</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="">汽车.船</a>
+						<div class="tishi5">
+							<ul>
+								<li><a href="">汽车票</a></li>
+								<li><a href="">景区/机场专线</a></li>
+								<li><a href="">船票</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="">用车</a>
+						<div class="tishi6">
+							<ul>
+								<li><a href="">国内租车</a></li>
+								<li><a href="">境外租车</a></li>
+								<li><a href="">接送机站</a></li>
+								<li><a href="">按天包车</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="menpiao.html">门票</a>
+						<div class="tishi7">
+							<ul>
+								<li><a href="">门票·活动</a></li>
+								<li><a href="">出境WiFi•电话卡</a></li>
+								<li><a href="">周末游</a></li>
+								<li><a href="">上海海昌</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li><a href="">攻略</a></li>
+					<li>
+						<a href="quanqiugou.html">全球购</a>
+						<div class="tishi8">
+							<ul>
+								<li><a href="">名店购</a></li>
+								<li><a href="">旅游购物商城</a></li>
+								<li><a href="">银联特惠</a></li>
+								<li><a href="">外币兑换</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="lipinka.html">礼品卡</a>
+						<div class="tishi9">
+							<ul>
+								<li><a href="">礼品卡首页</a></li>
+								<li><a href="">节日/主题购卡</a></li>
+								<li><a href="">礼品卡福袋</a></li>
+								<li><a href="">企业采购</a></li>
+								<li><a href="">兑换券</a></li>
+								<li><a href="">外币兑换</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+
+						</div>
+					</li>
+					<li>
+						<a href="">商旅</a>
+						<div class="tishi10">
+							<ul>
+								<li><a href="">商旅首页</a></li>
+								<li><a href="">企业客户注册</a></li>
+								<li><a href="">会议旅游</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+						</div>
+					</li>
+					<li><a href="">邮轮</a></li>
+					<li><a href="">目的地</a></li>
+					<li><a href="">金融</a></li>
+					<li>
+						<a href="">更多</a>
+						<div class="tishi11">
+							<ul>
+								<li><a href="">会员商城</a></li>
+								<li><a href="">合作会员</a></li>
+								<li><a href="">合作卡</a></li>
+							</ul>
+						</div>
+						<div class="jiantou1">
+						</div>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="box3">
+			<img src="images/c-img/10031e000001fq0hcB1E3.jpg">
+		</div>
+		<div class="box4">
+			<img src="images/c-img/va9ryijechlsd8u0gwctxkosyvxjoqbb.png">
+		</div>
+		<div class="box5">
+			<div class="save2">
+				<div class="box6">
+					<div class="box7">
+						<p>目的地/酒店名称</p>
+						<h4>上海</h1>
+					</div>
+					<div class="tanchu1">
+						<p>最近搜索记录</p>
+						<div class="jilu"><a href="">上海</a></div>
+						<p>国内热门城市</p>
+						<table>
+							<tr>
+								<td><a href="">北京</a></td>
+								<td><a href="">上海</a></td>
+								<td><a href="">天津</a></td>
+								<td><a href="">重庆</a></td>
+								<td><a href="">大连</a></td>
+							</tr>
+							<tr>
+								<td><a href="">青岛</a></td>
+								<td><a href="">西安</a></td>
+								<td><a href="">南京</a></td>
+								<td><a href="">苏州</a></td>
+								<td><a href="">杭州</a></td>
+							</tr>
+							<tr>
+								<td><a href="">厦门</a></td>
+								<td><a href="">成都</a></td>
+								<td><a href="">深圳</a></td>
+								<td><a href="">广州</a></td>
+								<td><a href="">深圳</a></td>
+							</tr>
+							<tr>
+								<td><a href="">台北</a></td>
+								<td><a href="">香港</a></td>
+								<td><a href="">济南</a></td>
+								<td><a href="">宁波</a></td>
+								<td><a href="">沈阳</a></td>
+							</tr>
+							<tr>
+								<td><a href="">武汉</a></td>
+								<td><a href="">郑州</a></td>
+							</tr>
+						</table>
+						<p>海外热门城市</p>
+						<table>
+							<tr>
+								<td><a href="">首尔</a></td>
+								<td><a href="">曼谷</a></td>
+								<td><a href="">普吉岛</a></td>
+								<td><a href="">东京</a></td>
+								<td><a href="">新加坡</a></td>
+							</tr>
+							<tr>
+								<td><a href="">大阪</a></td>
+								<td><a href="">济州市</a></td>
+								<td><a href="">巴厘岛</a></td>
+								<td><a href="">清迈</a></td>
+								<td><a href="">哥打京拿巴鲁</a></td>
+							</tr>
+							<tr>
+								<td><a href="">京都</a></td>
+								<td><a href="">吉隆坡</a></td>
+								<td><a href="">芭提雅</a></td>
+								<td><a href="">那霸</a></td>
+								<td><a href="">洛杉矶</a></td>
+							</tr>
+							<tr>
+								<td><a href="">苏梅岛</a></td>
+								<td><a href="">巴黎</a></td>
+								<td><a href="">甲米</a></td>
+								<td><a href="">拉斯维加斯</a></td>
+								<td><a href="">伦敦</a></td>
+							</tr>
+							<tr>
+								<td><a href="">纽约</a></td>
+								<td><a href="">芽庄</a></td>
+								<td><a href="">悉尼</a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="box8">
+						<div class="left">
+							<p>入住时间</p>
+							<h4>12月9日(今天)</h4>
+						</div>
+						<p class="mid">1晚</p>
+						<div class="right">
+							<p>退房时间</p>
+							<h4>12月10日(明...</h4>
+						</div>
+						<div class="tanchu2">
+							<div class="zuo">
+								<p>2022年1月</p>
+								<span>周日</span><span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span>
+								<table>
+									<tr>
+										<td><a href="">1</a></td>
+										<td><a href="">2</a></td>
+										<td><a href="">3</a></td>
+										<td><a href="">4</a></td>
+									</tr>
+									<tr>
+										<td><a href="">5</a></td>
+										<td><a href="">6</a></td>
+										<td><a href="">7</a></td>
+										<td><a href="">8</a></td>
+										<td><a href="">9</a></td>
+										<td><a href="">10</a></td>
+										<td><a href="">11</a></td>
+									</tr>
+									<tr>
+										<td><a href="">12</a></td>
+										<td><a href="">13</a></td>
+										<td><a href="">14</a></td>
+										<td><a href="">15</a></td>
+										<td><a href="">16</a></td>
+										<td><a href="">17</a></td>
+										<td><a href="">18</a></td>
+									</tr>
+									<tr>
+										<td><a href="">19</a></td>
+										<td><a href="">20</a></td>
+										<td><a href="">21</a></td>
+										<td><a href="">22</a></td>
+										<td><a href="">23</a></td>
+										<td><a href="">24</a></td>
+										<td><a href="">25</a></td>
+									</tr>
+									<tr>
+										<td><a href="">26</a></td>
+										<td><a href="">27</a></td>
+										<td><a href="">28</a></td>
+										<td><a href="">29</a></td>
+										<td><a href="">30</a></td>
+										<td><a href="">31</a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="zuo you">
+								<p>2021年12月</p>
+								<span>周日</span><span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span>
+								<table>
+									<tr>
+										<td><a href="">1</a></td>
+										<td><a href="">2</a></td>
+										<td><a href="">3</a></td>
+										<td><a href="">4</a></td>
+									</tr>
+									<tr>
+										<td><a href="">5</a></td>
+										<td><a href="">6</a></td>
+										<td><a href="">7</a></td>
+										<td><a href="">8</a></td>
+										<td><a href="">9</a></td>
+										<td><a href="">10</a></td>
+										<td><a href="">11</a></td>
+									</tr>
+									<tr>
+										<td><a href="">12</a></td>
+										<td><a href="">13</a></td>
+										<td><a href="">14</a></td>
+										<td><a href="">15</a></td>
+										<td><a href="">16</a></td>
+										<td><a href="">17</a></td>
+										<td><a href="">18</a></td>
+									</tr>
+									<tr>
+										<td><a href="">19</a></td>
+										<td><a href="">20</a></td>
+										<td><a href="">21</a></td>
+										<td><a href="">22</a></td>
+										<td><a href="">23</a></td>
+										<td><a href="">24</a></td>
+										<td><a href="">25</a></td>
+									</tr>
+									<tr>
+										<td><a href="">26</a></td>
+										<td><a href="">27</a></td>
+										<td><a href="">28</a></td>
+										<td><a href="">29</a></td>
+										<td><a href="">30</a></td>
+										<td><a href="">31</a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="xia">
+								<p>12月10日(周五) - 12月11日(周六)(1晚)</p>
+								<h6>入住和退房时间均为酒店当地时间。</h6>
+							</div>
+						</div>
+					</div>
+					<div class="box9">
+						<p>房间及住客</p>
+						<h4>1间,3位</h4>
+					</div>
+					<div class="tanchu3">
+						<div class="room">
+							<p>房间</p>
+							<p>1</p>
+						</div>
+						<div class="room">
+							<p>成人</p>
+							<p>1</p>
+						</div>
+						<div class="room">
+							<p>儿童</p>
+							<p>1</p>
+						</div>
+						<div class="sure">
+							<p><a href="">确定</a></p>
+						</div>
+					</div>
+					<div class="box10">
+						<p>关键词(选填)</p>
+						<input type="text" placeholder="机场，火车站，酒店名称区域" />
+					</div>
+					<a class="box11" href="">
+
+					</a>
+					<div class="box12">
+						<p>星级/钻级</p>
+						<p class="ada"><a href="">二星(钻)及以下</a></p>
+						<P class="ada"><a href="">三星(钻)</a></P>
+						<P class="ada"><a href="">四星(钻)</a></P>
+						<P class="ada"><a href="">五星(钻)</a></P>
+					</div>
+				</div>
+			</div>
+			<div class="box13">
+				<div class="save2">
+					<div class="banner swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/c-img/ia_100000006.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000007.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000008.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000009.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000010.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000011.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000012.jpg"></div>
+					 	<div class="swiper-slide"><img src="images/c-img/ia_100000014.jpg"></div>
+							<div class="swiper-slide"><img src="images/c-img/ia_100000013.jpg"></div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div class="logo">
+						<h1>酒店业务服务升级</h1>
+						<div class="three">
+							<img src="images/c-img/0ox4m3epkk4mgm55i2fhhws46dompeps.png" >
+							<img src="images/c-img/y0qnre3otorwnpa0ktxvd6m725s17fcw.png" >
+							<img src="./images/c-img/q1s0df6cl9inbt35kz6qi7rv08l7jsqa.png" >
+						</div>
+						<div class="three2">
+							<span>确认后变更，最高赔付首晚房费的3倍</span>
+							<span>到店无房最高赔付首晚房费的3倍</span>
+							<span>退改服务保障与承诺</span>
+						</div>
+					</div>
+					<div class="jiudian">
+						<h1>酒店推荐</h1>
+						<div class="place">
+							<span class="bgc"><a href="javascript:void(0);">上海</a></span>
+							<span><a href="javascript:void(0);">北京</a></span>
+							<span><a href="javascript:void(0);">广州</a></span>
+							<span><a href="javascript:void(0);">三亚</a></span>
+							<span><a href="javascript:void(0);">杭州</a></span>
+							<span><a href="javascript:void(0);">成都</a></span>
+							<span><a href="javascript:void(0);">南京</a></span>
+							<span class="more"><a href="javascript:void(0);">更多</a></span>
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/A_V~1)B%60FQ2%5B%5DG7~9%7B4%25BTT.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/55T_RQM%7D~Z0I3V08I1J@X1R.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/0D8TJ@F)A50SL%258LKYJ7ZOQ.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/CQVP1ULNR%7BB8U%5B6DE8J1TFQ.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/N~%7D%60CKSFAT%7BN6RV_81%7B1@JS.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/_FZ6%7D_%5B5W5K~74JFCC@0ZRK.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/CQVP1ULNR%7BB8U%5B6DE8J1TFQ.png" >
+						</div>
+						<div class="tupian">
+							<img src="images/c-img/CQVP1ULNR%7BB8U%5B6DE8J1TFQ.png" >
+						</div>
+						<div class="tanchu4">
+							<table>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+								<tr>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+									<td><a href="">重庆</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="three3">
+						<a href=""><img src="images/c-img/e0bh4bq4awntho62mn3ji9az8atha3tm.jpg" ></a>
+						<a href=""><img src="images/c-img/hotel-supplierJoin.png" ></a>
+						<a href=""><img src="images/c-img/hotel_ebooking.png" ></a>
+					</div>
+					<div class="bottom">
+						<img src="images/c-img/QTC@4BK5XBR)%25XASQA%6003PW.png" >
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		    <div id="base_ft">
+		        <p>
+		            <a href="http://pages.ctrip.com/public/sitemap/sitemap.htm" target="_blank"
+		                title="网站导航">网站导航</a>&nbsp;|&nbsp;<a href="http://hotels.ctrip.com/jiudian/" target="_blank"
+		                title="宾馆索引">宾馆索引</a>&nbsp;|&nbsp;<a
+		                href="http://flights.ctrip.com/booking/hot-city-flights-sitemap.html " target="_blank"
+		                title="机票索引">机票索引</a>&nbsp;|&nbsp;<a href="http://pages.ctrip.com/public/sitemap/dj.html"
+		                title="旅游索引">旅游索引</a>&nbsp;|&nbsp;<a href="https://ct.ctrip.com/biztravel/webmap/index?ctm_ref=sme001"
+		                title="商旅索引">商旅索引</a>&nbsp;|&nbsp;<a title="攻略索引"
+		                href="http://you.ctrip.com/sitemap/">攻略索引</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                href="http://pages.ctrip.com/public/ctripab/abctrip.htm" target="_blank"
+		                title="关于携程">关于携程</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank"
+		                href="http://pages.ctrip.com/commerce/promote/201201/other/qygm/index.html"
+		                title="企业公民">企业公民</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank" href="https://careers.ctrip.com/"
+		                title="诚聘英才">诚聘英才</a>&nbsp;|&nbsp;<a rel="nofollow" title="智慧旅游"
+		                href="http://you.ctrip.com/Intelligence.html">智慧旅游</a>&nbsp; |&nbsp;<a rel="nofollow" target="_blank"
+		                href="http://u.ctrip.com/" title="分销联盟">分销联盟</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank"
+		                href="http://pages.ctrip.com/public/dlhz.htm" title="代理合作">代理合作</a>&nbsp;|&nbsp;<a target="_blank"
+		                href="http://ct.ctrip.com" title="企业商旅">企业商旅</a>&nbsp;|&nbsp;<a target="_blank"
+		                href="https://ct.ctrip.com/?ctm_ref=sme001" title="中小企业差旅">中小企业差旅</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                target="_blank" href="http://pages.ctrip.com/public/contact.htm" title="联系我们">联系我们</a>
+		        </p>
+		        <p>
+		            <a rel="nofollow" href="http://pages.c-ctrip.com/cooperation/web/cooperation.html#ctm_ref=ctr_hp_btm_coop"
+		                target="_blank">加盟合作</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                href="http://ebooking.ctrip.com/ebkovsassembly/HotelApply?type=1&amp;channel=1&amp;lang=0"
+		                target="_blank" title="酒店加盟">酒店加盟</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                href="http://dst.ctrip.com/">目的地及景区合作</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                href="https://contents.ctrip.com/huodong/privacypolicypc/index?type=0" target="_blank"
+		                title="用户协议">用户协议</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                href="https://contents.ctrip.com/huodong/privacypolicypc/index?type=1" target="_blank"
+		                title="隐私政策">隐私政策</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank"
+		                href="http://pages.ctrip.com/public/diploma/company.htm">营业执照</a>&nbsp;|&nbsp;<a rel="nofollow"
+		                target="_blank" href="http://m.ctrip.com/webapp/vacations/tour/supplier"
+		                title="旅游度假资质">旅游度假资质</a>&nbsp;|&nbsp;<a rel="nofollow" target="_blank"
+		                href="http://www.ctripins.com/index.html">保险代理</a>&nbsp;|&nbsp;<a target="_blank"
+		                href="http://pages.ctrip.com/public/link/ctrip_link.html">友情链接</a>
+		        <p>
+		            <a rel="nofollow" href="http://pages.ctrip.com/public/copyright.htm"
+		                id="copyright">Copyright&copy;</a>,&nbsp;<a href="http://www.ctrip.com/">ctrip.com</a>. All rights
+		            reserved.&nbsp;|&nbsp;<a rel="nofollow" target="_blank"
+		                href="https://dimg04.c-ctrip.com/images/0AS20120008vujsdr8AB0.jpg">ICP证：沪B2-20050130</a>&nbsp;|&nbsp;<a
+		                rel="nofollow" target="_blank" href="http://beian.miit.gov.cn/">沪ICP备08023580号</a>
+		        </p>
+		        </p>
+		        <p class="gns">
+		            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502002731"><i
+		                    class="icon-gns"></i><img src="" alt=""> 沪公网备31010502002731号</a>丨<a
+		                href="https://dimg04.c-ctrip.com/images/0AS2v120008vujtbuCAAF.png" target="_blank">互联网药品信息服务资格证</a>丨<a
+		                href="http://m.ctrip.com/webapp/vacations/tour/supplier" rel="nofollow">旅游度假资质</a>
+		        </p>
+		        <div class="honour_wrap">
+		            <a href="http://www.cecpsp.org.cn/index.credit?action=certDetail&amp;id=40288084605466f1016057ea4cb20021"
+		                class="honour1" target="_blank" rel="nofollow">信用评级</a><a href="http://scjgj.sh.gov.cn/" title="工商亮照标识"
+		                class="honour2" target="_blank" rel="nofollow">上海工商</a><a
+		                href="http://credit.szfw.org/CX20111018000615000623.html" title="诚信认证示范企业" class="honour3"
+		                target="_blank" rel="nofollow">诚信网站</a><a href="http://www.zx110.org/" class="honour4" target="_blank"
+		                rel="nofollow" title="征信网">网络社会征信网</a><a href="http://www.shjbzx.cn/" class="honour5" target="_blank"
+		                rel="nofollow" title="上海市互联网违法与违规信息举报中心">信息举报中心</a><a
+		                href="https://ss.knet.cn/verifyseal.dll?sn=e12061531010025926306977" class="honour6" target="_blank"
+		                rel="nofollow" title="可信网站">可信网站</a>
+		        </div>
+		        <div class="honour_wrap">
+		            <a href="http://www.creditchina.gov.cn/" class="honour10" title="信用中国" target="_blank"
+		                rel="nofollow">信用中国</a><a href="https://www.12377.cn/" class="honour12" title="网上有害信息举报专区"
+		                target="_blank" rel="nofollow">网上有害信息举报专区</a><a
+		                href="https://im-synthesize.ctrip.com/complaints/rights/AppealCreate" class="honour11" title="消费维权联络点"
+		                target="_blank" rel="nofollow">消费维权联络点</a><a
+		                href="https://fw.scjgj.sh.gov.cn/platform/survey/step1_phone" class="honour9" title="网购大家评"
+		                target="_blank" rel="nofollow">网购大家评</a>
+		        </div>
+		        <img src="./images/c-img/Snipaste_2021-12-09_19-26-24.jpg" alt="">
+		    </div>
+		    <config id="timespan" value="20160329"></config>
+		    <!--InstanceEnd name="position"-->
+	</body>
+	<script type="text/javascript" src="js/jquery-3.6.0.js">
+
+	</script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			autoplay: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		$(function() {
+			$(".save li").hover(function() {
+				$(this).find(".tishi1").toggle();
+				$(this).find(".jiantou1").toggle();
+				$(this).find(".tishi2").toggle();
+				$(this).find(".tishi3").toggle();
+				$(this).find(".tishi4").toggle();
+				$(this).find(".tishi5").toggle();
+				$(this).find(".tishi6").toggle();
+				$(this).find(".tishi7").toggle();
+				$(this).find(".tishi8").toggle();
+				$(this).find(".tishi9").toggle();
+				$(this).find(".tishi10").toggle();
+				$(this).find(".tishi11").toggle();
+			})
+		})
+		$(function() {
+			$(".box7").click(function() {
+				$(".tanchu1").slideToggle();
+			})
+		})
+		$(function() {
+			$(".box8").click(function() {
+				$(".tanchu2").slideToggle();
+			})
+		})
+		$(function() {
+			$(".box9").click(function() {
+				$(".tanchu3").slideToggle();
+			})
+		})
+		$(function(){
+			// 让第一个tupian显示
+			$(".tupian").eq(0).show()
+			$(".place span").click(function(){
+				// 检测span有bgc的类，并移除
+				$(".place span.bgc").removeClass("bgc")
+				// 给当前点击的设置类
+				$(this).addClass("bgc");
+				// 获取点击的下标
+				var x = $(this).index()
+				// 检测显示的，并隐藏
+				$(".tupian:visible").hide()
+				// 让对应下标的显示
+				$(".tupian").eq(x).show()
+			})
+			
+		})
+		$(function() {
+			$(".more").click(function() {
+				$(".tanchu4").slideToggle();
+			})
+		})
+	</script>
+</html>
